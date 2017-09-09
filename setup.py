@@ -121,6 +121,7 @@ def configuration(parent_package='', top_path=None):
 
     config.add_subpackage('random',
                           subpackage_path=join('micpy', 'random'))
+    config.add_extension('sayhello', ['sayhello.c'])
 
     return config
 
